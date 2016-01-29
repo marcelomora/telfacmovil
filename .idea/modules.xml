@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facturamovil.iml" filepath="$PROJECT_DIR$/facturamovil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tfmdaogenerator/tfmdaogenerator.iml" filepath="$PROJECT_DIR$/tfmdaogenerator/tfmdaogenerator.iml" />
+    </modules>
+  </component>
+</project>

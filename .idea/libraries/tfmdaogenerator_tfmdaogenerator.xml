@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tfmdaogenerator.tfmdaogenerator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tfmdaogenerator/build/libs/tfmdaogenerator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

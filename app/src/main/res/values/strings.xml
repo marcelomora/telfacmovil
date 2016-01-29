@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TelecosFacturaMovil</string>
+    <string name="title_activity_invoice">Facturas</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Marcelo Mora</string>
+    <string name="email">java.diablo@gmail.com</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="title_activity_product_list">Productos</string>
+    <string name="title_activity_customer_list">Clientes</string>
+    <string name="title_activity_customer_form">Cliente</string>
+    <string name="title_activity_invoice_form">Factura</string>
+    <string name="customer">Cliente</string>
+    <string name="address">Dirección</string>
+    <string name="save">Guardar</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="zeroFloat">0.00</string>
+    <string name="vat">IVA</string>
+    <string name="total">Total</string>
+    <string name="show_location">Mostar ubicación</string>
+    <string name="search">Buscar</string>
+    <string name="server">Servidor</string>
+    <string name="password">Contraseña</string>
+    <string name="host">Host</string>
+    <string name="username">Usuario</string>
+    <string name="ok_save">Comprobar y guardar</string>
+
+</resources>

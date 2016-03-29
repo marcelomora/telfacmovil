@@ -27,6 +27,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
+import java.util.Locale;
+
 public class CustomerFormActivity extends AppCompatActivity
     implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
     // LogCat tag
@@ -187,6 +189,11 @@ public class CustomerFormActivity extends AppCompatActivity
             double longitude = mLastLocation.getLongitude();
 
             mTvLocation.setText(latitude + ", " + longitude);
+
+            //Show on Google Maps
+            String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            startActivity(intent);
 
         } else {
 

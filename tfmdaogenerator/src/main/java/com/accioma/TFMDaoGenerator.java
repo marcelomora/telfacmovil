@@ -59,8 +59,14 @@ public class TFMDaoGenerator {
         customerToInvoice.setName("customerInvoices");
 
         Entity invoiceLine = schema.addEntity("InvoiceLine");
-        invoiceLine.addIdProperty();
+        invoiceLine.addIdProperty().autoincrement();
+        invoiceLine.addStringProperty("name");
+        invoiceLine.addStringProperty("min");
+        invoiceLine.addStringProperty("icc");
         invoiceLine.addFloatProperty("qtty");
+        invoiceLine.addFloatProperty("price_unit");
+        invoiceLine.addFloatProperty("price_total");
+        invoiceLine.addFloatProperty("vatRate");
         invoiceLine.addFloatProperty("amountVat");
         invoiceLine.addStringProperty("description");
 

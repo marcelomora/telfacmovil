@@ -9,7 +9,10 @@ import android.widget.TextView;
 
 import com.accioma.telecosfacturamovil.R;
 import com.accioma.telecosfacturamovil.db.InvoiceLineDAO;
+import com.accioma.telecosfacturamovil.model.Invoice;
+import com.accioma.telecosfacturamovil.model.InvoiceLine;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,7 +22,7 @@ public class InvoiceLineListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     public static final String TAG = InvoiceLineListAdapter.class.getSimpleName();
 
-    List invoiceLines;
+    private List<InvoiceLine> invoiceLines;
 
     public InvoiceLineListAdapter() {
         this.invoiceLines = InvoiceLineDAO.readInvoiceLines(1L);
@@ -53,25 +56,31 @@ public class InvoiceLineListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         InvoiceLineViewHolder ivh = (InvoiceLineViewHolder) holder;
-        /*
-        ivh.productName.setText(invoiceLines.get(position).getProduct().getName());
-        ivh.amountTotal.setText(String.format("%.2f", invoiceLines.get(position).getSubtotalPrice()));
-        ivh.description.setText(invoiceLines.get(position).getProduct().getDescription());
-        */
-        /*
-        ivh.priceUnit.setText(
-                String.format("%f", invoiceLines.get(position).getQtty() + " X $") +
-                String.format("%.2f", invoiceLines.get(position).getUnitPrice()));
-        */
-        /*
-        ivh.priceUnit.setText(
-                String.format("%.2f", invoiceLines.get(position).getUnitPrice()));
-                */
 
+        InvoiceLine il = invoiceLines.get(position);
+        ivh.productName.setText(il.getIcc());
+        ivh.priceUnit.setText(
+                String.format("%.0f", il.getQtty()) + " X $" +
+                String.format("%.2f", il.getPrice_unit()));
+        String description = "[" + il.getName() + "] " + il.getDescription();
+        ivh.description.setText(description);
+        Float amountTotal = il.getQtty() * il.getPrice_unit();
+        ivh.amountTotal.setText("$ " + String.format("%.2f", amountTotal) );
     }
 
     @Override
     public int getItemCount() {
+        if(invoiceLines.size() == 0){
+            invoiceLines = new ArrayList<InvoiceLine>();
+            InvoiceLine invoiceLine = new InvoiceLine();
+            invoiceLine.setIcc("");
+            invoiceLine.setDescription("");
+            invoiceLine.setPrice_unit(0F);
+            invoiceLine.setQtty(0F);
+
+            invoiceLines.add(invoiceLine);
+
+        }
         Log.d(TAG, String.format("Lines %d", invoiceLines.size()));
         return invoiceLines.size();
     }

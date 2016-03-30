@@ -83,6 +83,8 @@ public class InvoiceListActivity extends AppCompatActivity {
                     switch (selection){
                         case 2:
                             intent = new Intent(InvoiceListActivity.this, CustomerListActivity.class);
+                            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent.putExtra(Consts.PARENT_ACTIVITY_MODE, CustomerListAdapter.EDIT_CUSTOMER);
                             break;
                     }

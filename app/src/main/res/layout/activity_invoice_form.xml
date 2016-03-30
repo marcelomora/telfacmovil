@@ -80,7 +80,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/ll_totals"
             android:layout_below="@+id/ll_customer_header"
-            android:padding="5pt"
+            android:padding="1pt"
             android:background="@null">
 
             <android.support.v7.widget.RecyclerView

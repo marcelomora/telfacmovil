@@ -10,7 +10,13 @@ import de.greenrobot.dao.DaoException;
 public class InvoiceLine {
 
     private Long id;
+    private String name;
+    private String min;
+    private String icc;
     private Float qtty;
+    private Float price_unit;
+    private Float price_total;
+    private Float vatRate;
     private Float amountVat;
     private String description;
     private Long invoiceId;
@@ -32,9 +38,15 @@ public class InvoiceLine {
         this.id = id;
     }
 
-    public InvoiceLine(Long id, Float qtty, Float amountVat, String description, Long invoiceId) {
+    public InvoiceLine(Long id, String name, String min, String icc, Float qtty, Float price_unit, Float price_total, Float vatRate, Float amountVat, String description, Long invoiceId) {
         this.id = id;
+        this.name = name;
+        this.min = min;
+        this.icc = icc;
         this.qtty = qtty;
+        this.price_unit = price_unit;
+        this.price_total = price_total;
+        this.vatRate = vatRate;
         this.amountVat = amountVat;
         this.description = description;
         this.invoiceId = invoiceId;
@@ -54,12 +66,60 @@ public class InvoiceLine {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getMin() {
+        return min;
+    }
+
+    public void setMin(String min) {
+        this.min = min;
+    }
+
+    public String getIcc() {
+        return icc;
+    }
+
+    public void setIcc(String icc) {
+        this.icc = icc;
+    }
+
     public Float getQtty() {
         return qtty;
     }
 
     public void setQtty(Float qtty) {
         this.qtty = qtty;
+    }
+
+    public Float getPrice_unit() {
+        return price_unit;
+    }
+
+    public void setPrice_unit(Float price_unit) {
+        this.price_unit = price_unit;
+    }
+
+    public Float getPrice_total() {
+        return price_total;
+    }
+
+    public void setPrice_total(Float price_total) {
+        this.price_total = price_total;
+    }
+
+    public Float getVatRate() {
+        return vatRate;
+    }
+
+    public void setVatRate(Float vatRate) {
+        this.vatRate = vatRate;
     }
 
     public Float getAmountVat() {

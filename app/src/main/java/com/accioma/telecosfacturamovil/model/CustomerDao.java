@@ -38,6 +38,8 @@ public class CustomerDao extends AbstractDao<Customer, Long> {
         public final static Property Location = new Property(12, String.class, "location", false, "LOCATION");
     };
 
+    private DaoSession daoSession;
+
 
     public CustomerDao(DaoConfig config) {
         super(config);
@@ -45,6 +47,7 @@ public class CustomerDao extends AbstractDao<Customer, Long> {
     
     public CustomerDao(DaoConfig config, DaoSession daoSession) {
         super(config, daoSession);
+        this.daoSession = daoSession;
     }
 
     /** Creates the underlying database table. */
@@ -141,6 +144,12 @@ public class CustomerDao extends AbstractDao<Customer, Long> {
         if (location != null) {
             stmt.bindString(13, location);
         }
+    }
+
+    @Override
+    protected void attachEntity(Customer entity) {
+        super.attachEntity(entity);
+        entity.__setDaoSession(daoSession);
     }
 
     /** @inheritdoc */

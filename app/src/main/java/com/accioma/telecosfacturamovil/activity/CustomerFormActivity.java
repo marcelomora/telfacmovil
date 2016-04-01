@@ -137,7 +137,7 @@ public class CustomerFormActivity extends AppCompatActivity
 
     @Override
     public void onConnected(Bundle bundle) {
-        displayLocation();
+        //displayLocation();
     }
 
     @Override

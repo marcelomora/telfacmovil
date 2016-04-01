@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -52,7 +55,7 @@ public class InvoiceFormActivity extends AppCompatActivity {
 
         invoiceLines.setHasFixedSize(true);
         invoiceLines.setLayoutManager(new LinearLayoutManager(this));
-        invoiceLines.setAdapter(new InvoiceLineListAdapter());
+        invoiceLines.setAdapter(new InvoiceLineListAdapter(this));
     }
 
     @Override

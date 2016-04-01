@@ -100,6 +100,11 @@ public class InvoiceListActivity extends AppCompatActivity {
             public void onTouchEvent(RecyclerView rv, MotionEvent e) {
 
             }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+            }
         });
 
         Drawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // Drawer object Assigned to the view

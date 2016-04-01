@@ -83,7 +83,6 @@ public class CustomerListActivity extends AppCompatActivity implements SearchVie
         SQLiteDatabase db = helper.getWritableDatabase();
         DaoMaster daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
-
         CustomerDao customerDao = daoSession.getCustomerDao();
 
         setContentView(R.layout.activity_customer_list);
@@ -139,6 +138,11 @@ public class CustomerListActivity extends AppCompatActivity implements SearchVie
             public void onTouchEvent(RecyclerView rv, MotionEvent e) {
 
             }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+            }
         });
 
         Drawer = (DrawerLayout) findViewById(R.id.DrawerLayout);        // Drawer object Assigned to the view
@@ -181,6 +185,15 @@ public class CustomerListActivity extends AppCompatActivity implements SearchVie
             }
         });
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        CustomerDao customerDao = daoSession.getCustomerDao();
+        QueryBuilder qbCustomer = customerDao.queryBuilder();
+        mCustomerListAdapter = new CustomerListAdapter(this, qbCustomer.limit(20).list());
+        mCustomerList.setAdapter(mCustomerListAdapter);
     }
 
     @Override

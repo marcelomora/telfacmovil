@@ -33,6 +33,8 @@
     <string name="password_field_required">¡La contraseña es requerida!</string>
     <string name="email_field_required">¡La dirección de correo es requerida!</string>
     <string name="serie_field_required">¡La serie es requerida!</string>
+    <string name="title_activity_invoice_line">InvoiceLineActivity</string>
+    <string name="icc">ICC</string>
 
 
 </resources>

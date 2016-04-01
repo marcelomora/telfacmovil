@@ -2,116 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.1.0/jars/classes.jar"
+        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-5c2991cd901c81badf2fe3becb0d559d4bef012c.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-1183080c12442899cc78703b407ab85e5cee05d3.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b868b833b0887aa48c4e581558eef4f1196f6a2">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-a4ecc0d5b1568f2a937fb33ff863284071ed2c80.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-b5eccd5b66a88e8beccf4fbc7837265dd217b066.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/de.greenrobot/greendao/1.3.7/dda08161d004c4df96938da6909f1c2b96cd33c8/greendao-1.3.7.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/greendao-1.3.7-bdcd539750ec5578a137d70bc1a0c3c9c2c86eaf.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="983e2f375504bc04def18e709c35192afe92e65f">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-0b176c96dbe5f0673e1ebcb5cec030ec96fedbc5.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6-acbf20ba899495528d542b2a251e844db2cf34d9.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c6d79137693d494dee16372d3921f919eb724ced">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-102a99ffcae929f4024e2d2c09d0f55ecdc2c45f.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-016e5a9c7d173df179008945eecc180a0eb3a3ca.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/gson-2.4-9d5f0be87650c6a7033ae9f99e793d037d3fd60c.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-4f5bd128c5997c79319f9475c0dfae6e3c9ad97d.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/library-1.0.19-f147aec53bb9a8f5244c87005ed46ac2847b889d.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9-61025d42b46b08cf1fba43c8b6711645612d97b8.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-4c92fdf262b5493fc6bc7c9fd4c07650b1d25f80.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/android.sdk/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-07bb5742573fd7e33c5781505de1adb72bf47bab.jar" />
-    </item>
-    <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-a01b2812a8a2184282fac0a9481c3f974e2f0bf8.jar" />
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-7bff088e2351f654caae8c185283ed721ca578b9.jar" />
     </item>
 
 </items>

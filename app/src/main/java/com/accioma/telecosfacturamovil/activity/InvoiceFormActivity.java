@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.accioma.telecosfacturamovil.Consts;
@@ -29,10 +31,41 @@ public class InvoiceFormActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TextView customerText;
     private RecyclerView invoiceLines;
+    private Spinner mProductSpinner;
+    private TextView mPriceTextView;
+    private Float mPrice;
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Log.i("Facturas", "Saving state");
+        super.onSaveInstanceState(outState);
+        outState.putString("customer", customerText.getText().toString());
+        if(mPriceTextView.getText().toString().equals("")){
+            mPriceTextView.setText("0.0");
+        }
+        mPrice = Float.parseFloat(mPriceTextView.getText().toString());
+        outState.putFloat("price", mPrice);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i("Facturas", "Restoring state");
+        customerText.setText(savedInstanceState.getString("customer"));
+
+        mPrice = savedInstanceState.getFloat("price");
+        Log.d("Saved Price", mPrice.toString());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(savedInstanceState != null){
+            Log.d("Facturas", savedInstanceState.getString("customer"));
+        }
+
         setContentView(R.layout.activity_invoice_form);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,6 +89,14 @@ public class InvoiceFormActivity extends AppCompatActivity {
         invoiceLines.setHasFixedSize(true);
         invoiceLines.setLayoutManager(new LinearLayoutManager(this));
         invoiceLines.setAdapter(new InvoiceLineListAdapter(this));
+
+        mProductSpinner = (Spinner)findViewById(R.id.product_spinner);
+        ArrayAdapter<CharSequence> productAdapter = ArrayAdapter.createFromResource(this,
+                R.array.products_array, android.R.layout.simple_spinner_dropdown_item);
+        mProductSpinner.setAdapter(productAdapter);
+
+        mPriceTextView = (TextView)findViewById(R.id.edit_text_inv_price_unit);
+
     }
 
     @Override

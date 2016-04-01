@@ -35,6 +35,11 @@
     <string name="serie_field_required">¡La serie es requerida!</string>
     <string name="title_activity_invoice_line">InvoiceLineActivity</string>
     <string name="icc">ICC</string>
+    <string-array name="products_array">
+        <item>SIM CARD</item>
+        <item>BASE CELULAR</item>
+        <item>SERVICIO</item>
+    </string-array>
 
 
 </resources>

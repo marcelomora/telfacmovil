@@ -2,11 +2,102 @@
 <items version="2" >
 
     <item
-        jar="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-b5781930b10eca1f52c3c9b9b68aae4a2b74eb17.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-a2030451eb042be43fc29ff17dff574daf9edb5f.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/2.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="64380fc4876a34f3f97cc7e59ef3182543624231">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-0fa23ef0b56de120f2ad45924fec8dd44830f714.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-8b646a3a0484c8f27cede54eeae913dd85252df5.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-68bd0b0df1a13ec1e19010bb4f72eec3ab0e974f.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="a8412b654dab86d57bf90683367488211c8a81f1">
-        <dex dex="/Users/marcelomora/AndroidStudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-7bff088e2351f654caae8c185283ed721ca578b9.jar" />
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-8ce444ebf415839cf518ac0b7c9ad3ee2d0b93e8.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-b5f63eca16afcceeb4f44a14ee383fb83028e668.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/core-3.2.0-0c750c28b42e46daa0a65b2f883a9451f91cd487.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-e240ec34e4d22d5ba0ca92f4fd05ff1e36940130.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-049b320ad7d3785782f9b4b366ea5eac55b904b7.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-73cecadca4c05f8296eb268e254e65030d19eb7f.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-0466a1665fc7d75e68616417e421b3100c1bd294.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-9361fc018174c73e7d4afa3141a99d0326744c0f.jar" />
+    </item>
+    <item
+        jar="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-integration/2.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bca1d3229113cccbb9ca38c1d2e6d51be318da9e">
+        <dex dex="/Users/marcelomora/StudioProjects/telfacmovil/app/build/intermediates/pre-dexed/debug/classes-83bfc61e68ca6501fa572ee657e62e6f9a1b70a8.jar" />
     </item>
 
 </items>

@@ -1,217 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/tool_bar"
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar"
 
-        ></include>
-
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/toolbar">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                android:background="@color/FormBackground">
+            ></include>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:id="@+id/invoice_number"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/ColorPrimaryDark" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:id="@+id/invoice_issue_date"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/ll_customer_header"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                android:background="@color/FormBackground"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A "
-                    android:id="@+id/customer_label"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/customer"
-                    android:id="@+id/customer_name"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/ll_totals"
-                android:layout_below="@+id/ll_customer_header"
-                android:padding="1pt"
-                android:background="@null">
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/FormBackground">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/invoice_number"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ColorPrimaryDark" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/invoice_issue_date"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Spinner
-                        android:id="@+id/product_spinner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ll_customer_header"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/FormBackground"
+                    >
 
-                    </Spinner>
-                    <EditText
-                        android:id="@+id/edit_text_inv_price_unit"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Precio"
-                        android:inputType="numberDecimal" />
+                        android:text="A "
+                        android:id="@+id/customer_label"
+                        android:textSize="18sp" />
 
-
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer"
+                        android:id="@+id/customer_name"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
-
-                <android.support.v7.widget.RecyclerView
-                    android:scrollbars="vertical"
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/invoice_line"
-                    android:transcriptMode="alwaysScroll"
-                    android:stackFromBottom="true"
-                    android:divider="@null"
-                    android:background="@null"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:padding="5pt"
-            android:id="@+id/ll_totals"
-            android:background="#ffffff"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:elevation="5dp"
-            android:layout_margin="0pt">
+                    android:layout_above="@+id/ll_totals"
+                    android:layout_below="@+id/ll_customer_header"
+                    android:padding="1pt"
+                    android:background="@null">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="1pt"
-                android:id="@+id/llSubtotal"
-                android:background="#ffffff"
-                android:layout_alignParentRight="true"
-                android:layout_margin="0pt"
-                android:gravity="right"
-                android:weightSum="1">
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/subtotal"
-                    android:id="@+id/subtotalLabelTextView" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/zeroFloat"
-                    android:id="@+id/subtotalAmountLabelTextView"
-                    android:gravity="right"
-                    android:textStyle="bold"
-                    android:layout_weight="0.09" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/invoice_line"
+                        android:transcriptMode="alwaysScroll"
+                        android:stackFromBottom="true"
+                        android:divider="@null"
+                        android:background="@null"
+                        />
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:padding="1pt"
-                android:id="@+id/llTotal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5pt"
+                android:id="@+id/ll_totals"
                 android:background="#ffffff"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
-                android:layout_margin="0pt"
-                android:gravity="right"
-                android:weightSum="1">
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/vat"
-                    android:id="@+id/vatLabelTextView" />
+                android:elevation="5dp"
+                android:layout_margin="0pt">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zeroFloat"
-                    android:id="@+id/vatAmountTextView"
+                    android:padding="1pt"
+                    android:id="@+id/llSubtotal"
+                    android:background="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="0pt"
                     android:gravity="right"
-                    android:textStyle="bold"
-                    android:layout_weight="0.09" />
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="1pt"
-                android:id="@+id/llAmount"
-                android:background="#ffffff"
-                android:layout_alignParentRight="true"
-                android:layout_margin="0pt"
-                android:gravity="right"
-                android:weightSum="1">
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/total"
-                    android:id="@+id/amountLabelTextView" />
+                    android:weightSum="1">
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:id="@+id/subtotalLabelTextView" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zeroFloat"
+                        android:id="@+id/subtotalAmountLabelTextView"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_weight="0.09" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zeroFloat"
-                    android:id="@+id/amountTotalTextView"
+                    android:padding="1pt"
+                    android:id="@+id/llTotal"
+                    android:background="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="0pt"
                     android:gravity="right"
-                    android:textStyle="bold"
-                    android:layout_weight="0.09" />
-            </LinearLayout>
-        </LinearLayout>
-</RelativeLayout>
+                    android:weightSum="1">
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vat"
+                        android:id="@+id/vatLabelTextView" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zeroFloat"
+                        android:id="@+id/vatAmountTextView"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_weight="0.09" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1pt"
+                    android:id="@+id/llAmount"
+                    android:background="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="0pt"
+                    android:gravity="right"
+                    android:weightSum="1">
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:id="@+id/amountLabelTextView" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zeroFloat"
+                        android:id="@+id/amountTotalTextView"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_weight="0.09" />
+                </LinearLayout>
+            </LinearLayout>
+    </RelativeLayout>

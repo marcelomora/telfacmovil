@@ -31,8 +31,6 @@ public class InvoiceFormActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TextView customerText;
     private RecyclerView invoiceLines;
-    private Spinner mProductSpinner;
-    private TextView mPriceTextView;
     private Float mPrice;
 
     @Override
@@ -40,10 +38,6 @@ public class InvoiceFormActivity extends AppCompatActivity {
         Log.i("Facturas", "Saving state");
         super.onSaveInstanceState(outState);
         outState.putString("customer", customerText.getText().toString());
-        if(mPriceTextView.getText().toString().equals("")){
-            mPriceTextView.setText("0.0");
-        }
-        mPrice = Float.parseFloat(mPriceTextView.getText().toString());
         outState.putFloat("price", mPrice);
 
     }
@@ -60,6 +54,7 @@ public class InvoiceFormActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mPrice = 0f;
         super.onCreate(savedInstanceState);
 
         if(savedInstanceState != null){
@@ -89,13 +84,6 @@ public class InvoiceFormActivity extends AppCompatActivity {
         invoiceLines.setHasFixedSize(true);
         invoiceLines.setLayoutManager(new LinearLayoutManager(this));
         invoiceLines.setAdapter(new InvoiceLineListAdapter(this));
-
-        mProductSpinner = (Spinner)findViewById(R.id.product_spinner);
-        ArrayAdapter<CharSequence> productAdapter = ArrayAdapter.createFromResource(this,
-                R.array.products_array, android.R.layout.simple_spinner_dropdown_item);
-        mProductSpinner.setAdapter(productAdapter);
-
-        mPriceTextView = (TextView)findViewById(R.id.edit_text_inv_price_unit);
 
     }
 

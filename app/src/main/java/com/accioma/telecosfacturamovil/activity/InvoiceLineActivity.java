@@ -16,6 +16,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class InvoiceLineActivity extends AppCompatActivity {
 
+    public static final int REQUEST_PRODUCT = 2;
     private EditText nameText;
     private EditText iccText;
     private CoordinatorLayout invoiceLineLayout;
@@ -29,13 +30,27 @@ public class InvoiceLineActivity extends AppCompatActivity {
 
         invoiceLineLayout = (CoordinatorLayout)findViewById(R.id.invoice_line_layout);
         iccText = (EditText)findViewById(R.id.editTextIcc);
-
+        nameText = (EditText)findViewById(R.id.editTextName);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 IntentIntegrator integrator = new IntentIntegrator(InvoiceLineActivity.this);
+                integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+                integrator.setPrompt("Scan");
+                integrator.setCameraId(0);
+                integrator.setBeepEnabled(false);
+                integrator.setBarcodeImageEnabled(false);
                 integrator.initiateScan();
+            }
+        });
+
+        nameText.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InvoiceLineActivity.this, ProductListActivity.class);
+                startActivityForResult(intent, REQUEST_PRODUCT);
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
